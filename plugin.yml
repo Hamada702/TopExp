@@ -1,0 +1,9 @@
+---
+name: TopExp
+version: 1.0.0
+main: bink702\TopExp
+api: 3.25.0
+commands:
+  settopexp:
+    description: set topexp
+...
