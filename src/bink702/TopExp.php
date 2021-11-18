@@ -68,9 +68,9 @@ class TopExp extends PluginBase implements Listener {
     }
 
     public function saveExp(Player $player){
-        $exp = $data = new Config($this->getDataFolder() . "topExp.yml", Config::YAML);
+        $exp = new Config($this->getDataFolder() . "topExp.yml", Config::YAML);
         $name = $player->getName();
-        $xp = $player->getCurrentTotalXp();
+        $xp = $player->getXpLevel();
         $exp->set($name, $xp);
         $exp->save();
     }
